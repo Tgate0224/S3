@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="logo">
+        <a href="Index.html">
+        <img src="S3 Logo+Text - Blue.png" alt="S3 Solutions Logo" class="logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html" class="active">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Login.html">My Account</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+   <div class="login-container">
+        <h2>Login to your account!</h2>
+        <form action="http://localhost:5001/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <button type="submit">Login</button>
+        </form>
+   </div>
+   <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="Index.html"><img src="S3 Logo+Text - Blue.png" alt="S3 Solutions Logo"></a>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">My Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p>&copy; 2025 S3 Solutions. All rights reserved.</p>
+</footer>
+</body>
+</html>
