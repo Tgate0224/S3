@@ -66,22 +66,25 @@
     </div>
     <p>&copy; 2025 S3 Solutions. All rights reserved.</p>
 </footer>
-    <script>
-  const auth = firebase.auth();
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const auth = firebase.auth();
 
-  function login(event) {
-    event.preventDefault();
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    function login(event) {
+      event.preventDefault();
+      const email = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
 
-    auth.signInWithEmailAndPassword(email, password)
-      .then(() => {
-        window.location.href = "about.html";
-      })
-      .catch((error) => {
-        alert("Login failed: " + error.message);
-      });
-  }
-</script>
+      auth.signInWithEmailAndPassword(email, password)
+        .then(() => {
+          window.location.href = "portal.html";
+        })
+        .catch((error) => {
+          alert("Login failed: " + error.message);
+        });
+    }
+    document.querySelector("form").addEventListener("submit", login);
+  });
+  </script>
 </body>
 </html>
