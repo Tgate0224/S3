@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Portal - Downloads</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+ 
+      const firebaseConfig = {
+        apiKey: "AIzaSyC5eGuf3n4QDVWtzRlXUsNj9PhlsMZT1u4",
+        authDomain: "s3-solutions-f69c8.firebaseapp.com",
+        projectId: "s3-solutions-f69c8",
+        storageBucket: "s3-solutions-f69c8.firebasestorage.app",
+        messagingSenderId: "361877942362",
+        appId: "1:361877942362:web:0eb57051749a9c54642863",
+        measurementId: "G-7B7TLEPYQM"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+</script>
 </head>
 <header>
     <div class="logo">
