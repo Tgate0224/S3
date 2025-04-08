@@ -265,3 +265,18 @@ footer {
   .download-btn:hover {
     background-color: #f4666c;
   }
+
+.logout-button {
+    background-color: #FF6A00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #f4666c;
+}
