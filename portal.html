@@ -22,25 +22,6 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
 </script>
-    <script>
-  const logoutBtn = document.getElementById("logoutBtn");
-
-  logoutBtn.addEventListener("click", () => {
-    firebase.auth().signOut().then(() => {
-      alert("Logged out successfully!");
-      window.location.href = "login.html";
-    }).catch((error) => {
-      alert("Error logging out: " + error.message);
-    });
-  });
-</script>
-    <script>
-  firebase.auth().onAuthStateChanged((user) => {
-    if (!user) {
-      window.location.href = "login.html"; // Not logged in, redirect
-    }
-  });
-</script>
 </head>
   <header>
         <div class="logo">
@@ -58,7 +39,6 @@
             </ul>
         </nav>
         </div>
-     <button onclick="window.location.href='login.html'" class="logout-button">Logout</button>
     </header>
 <body>
     <h1>Client Portal - Software Downloads</h1>
